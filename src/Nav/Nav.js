@@ -20,23 +20,23 @@ class Nav extends Component {
         >
           <span class="navbar-toggler-icon" />
         </button>
-        <a class="navbar-brand " href="#">
+        <a class="navbar-brand nav-fonts" href="#">
           <b>Medical Care Clinic</b>
         </a>
         <div class="collapse navbar-collapse" id="navbarToggler">
           <ul class="navbar-nav  mt-2 mt-lg-0">
             <li class="nav-item active">
-              <a class="nav-link" href="#about">
-                <b>Home</b> <span class="sr-only">(current)</span>
+              <a class="nav-link nav-fonts " href="#about">
+                <b>About us</b> <span class="sr-only">(current)</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#doctors">
+              <a class="nav-link nav-fonts" href="#doctors">
                 Doctors
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link " href="#footer">
+              <a class="nav-link nav-fonts " href="#footer">
                 More about us
               </a>
             </li>
