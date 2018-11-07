@@ -1,8 +1,5 @@
 import React, { Component } from "react";
 import Cards from "./Cards/Cards";
-import Cards1 from "./Cards/Cards1";
-import Cards2 from "./Cards/Cards2";
-
 
 class Doctors extends Component {
   constructor(props) {
@@ -22,33 +19,26 @@ class Doctors extends Component {
                 title="Dr.Narayan Murthy"
                 experience="Experience:20yrs"
                 degree="MBBS/PHD(Neurology)"
-
+                imsrc="img/img5.jpg"
                 about="NEUROLOGIST"
-                
               />
             </div>
             <div class="col-sm">
-              <Cards1
+              <Cards
                 title="Dr.Keshav Nanda"
                 experience="Experience:12yrs"
                 degree="MBBS"
-
+                imsrc="img/img6.jpg"
                 about="Gynecologist"
-                
-
-                
               />
             </div>
             <div class="col-sm" style={{ padding: "5px;" }}>
-              <Cards2
+              <Cards
                 title="Johnny Adolf"
                 experience="Experience:7yrs"
                 degree="DDS"
-
+                imsrc="img/img7.jpg"
                 about="Dentist"
-               
-
-                
               />
             </div>
           </div>

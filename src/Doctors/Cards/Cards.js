@@ -9,11 +9,7 @@ class Cards extends Component {
   render() {
     return (
       <div className="card box" style={{ width: "300px", height: "500px" }}>
-        <img
-          class="card-img-top"
-          src="img/img5.jpg"
-          alt="Card image cap"
-        />
+        <img class="card-img-top" src={this.props.imsrc} alt="Card image cap" />
 
         <div class="card-body">
           <h4 class="card-title">{this.props.title}</h4>
