@@ -5,44 +5,51 @@
       "name" : "Dr.NARAYANA MURTHY",
       "specialization":"NEUROLOGIST",
       "experience" : "22 yrs",
-      "degree":"MBBS/PHD"
+      "degree":"MBBS/PHD",
+      "Available Timings":"10am-3pm"
       
     },
     "a2" : {
       "name" : "Dr. KESHAV NANDA",
       "specialization":"GYNECOLOGIST",
       "experience" : "12 yrs",
-      "degree":"MBBS"
+      "degree":"MBBS",
+      "Available Timings":"9am-5pm"
     },
     "a3" : {
       "name" : "JOHNNY ADOLF",
       "specialization":"DENTIST",
       "experience" : "22 yrs",
-      "degree":"DDS"
+      "degree":"DDS",
+      "Available Timings":"10am-4pm"
     },
     "a4" : {
       "name" : "AMAN AGRAWAL",
       "specialization":"NEUROLOGIST",
       "experience" : "10 yrs",
-      "degree":"MBBS"
+      "degree":"MBBS",
+      "Available Timings":"4pm-9pm"
     },
     "a5" : {
       "name" : "VANSHIKA KULKARNI",
       "specialization":"GENERAL PHYSICIAN",
       "experience" : "18 yrs",
-      "degree":"M.D."
+      "degree":"M.D.",
+      "Available Timings":"8am-3pm"
     },
     "a6" : {
       "name" : "RAHUL JAIN",
       "specialization":"ORTHOPAEDICS",
       "experience" : "22 yrs",
-      "degree":"DDS"
+      "degree":"DDS",
+      "Available Timings":"12pm-7pm"
     },
     "a7" : {
       "name" : "HARWINDER SINGH",
       "specialization":"GENERAL PHYSICIAN",
       "experience" : "6 yrs",
-      "degree":"MBBS"
+      "degree":"MBBS",
+      "Available Timings":"5pm-10pm"
     }
   }
 }
