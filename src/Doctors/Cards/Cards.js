@@ -12,10 +12,11 @@ class Cards extends Component {
         <img class="card-img-top" src={this.props.imsrc} alt="Card image cap" />
 
         <div class="card-body">
-          <h4 class="card-title">{this.props.title}</h4>
-          <h5 class="card-text">{this.props.about}</h5>
+          <h4 class="card-title">{this.props.name}</h4>
+          <h5 class="card-text">{this.props.specialization}</h5>
           <p class="card-exp">{this.props.experience}</p>
           <p class="card-text">{this.props.degree}</p>
+          <p class="card-text">{this.props.availableTimings}</p>
         </div>
       </div>
     );

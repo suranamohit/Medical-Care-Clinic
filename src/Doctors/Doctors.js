@@ -16,29 +16,32 @@ class Doctors extends Component {
           <div class="row">
             <div class="col-sm">
               <Cards
-                title="Dr.Narayan Murthy"
+                name="Dr.Narayan Murthy"
                 experience="Experience:20yrs"
                 degree="MBBS/PHD(Neurology)"
                 imsrc="img/img5.jpg"
-                about="NEUROLOGIST"
+                specialization="NEUROLOGIST"
+                availableTimings="10am to 12pm"
               />
             </div>
             <div class="col-sm">
               <Cards
-                title="Dr.Keshav Nanda"
+                name="Dr.Keshav Nanda"
                 experience="Experience:12yrs"
                 degree="MBBS"
                 imsrc="img/img6.jpg"
-                about="Gynecologist"
+                specialization="Gynecologist"
+                availableTimings="10am to 12pm"
               />
             </div>
             <div class="col-sm" style={{ padding: "5px;" }}>
               <Cards
-                title="Johnny Adolf"
+                name="Johnny Adolf"
                 experience="Experience:7yrs"
                 degree="DDS"
                 imsrc="img/img7.jpg"
-                about="Dentist"
+                specialization="Dentist"
+                availableTimings="10am to 12pm"
               />
             </div>
           </div>
