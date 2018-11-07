@@ -1,25 +1,48 @@
 {
-  "doc" : {
+  "doctors" : {
     "a1" : {
-      "age" : 22,
-      "name" : "sgk",
-      "exp" : "sss"
+      
+      "name" : "Dr.NARAYANA MURTHY",
+      "specialization":"NEUROLOGIST",
+      "experience" : "22 yrs",
+      "degree":"MBBS/PHD"
+      
     },
     "a2" : {
-      "age" : 22,
-      "name" : "sgk2",
-      "exp" : "sml"
+      "name" : "Dr. KESHAV NANDA",
+      "specialization":"GYNECOLOGIST",
+      "experience" : "12 yrs",
+      "degree":"MBBS"
     },
     "a3" : {
-      "age" : 22,
-      "name" : "sgk2",
-      "exp" : "sml"
-    }
-    ,
+      "name" : "JOHNNY ADOLF",
+      "specialization":"DENTIST",
+      "experience" : "22 yrs",
+      "degree":"DDS"
+    },
     "a4" : {
-      "age" : 22,
-      "name" : "sgk2",
-      "exp" : "sml"
+      "name" : "AMAN AGRAWAL",
+      "specialization":"NEUROLOGIST",
+      "experience" : "10 yrs",
+      "degree":"MBBS"
+    },
+    "a5" : {
+      "name" : "VANSHIKA KULKARNI",
+      "specialization":"GENERAL PHYSICIAN",
+      "experience" : "18 yrs",
+      "degree":"M.D."
+    },
+    "a6" : {
+      "name" : "RAHUL JAIN",
+      "specialization":"ORTHOPAEDICS",
+      "experience" : "22 yrs",
+      "degree":"DDS"
+    },
+    "a7" : {
+      "name" : "HARWINDER SINGH",
+      "specialization":"GENERAL PHYSICIAN",
+      "experience" : "6 yrs",
+      "degree":"MBBS"
     }
   }
 }
