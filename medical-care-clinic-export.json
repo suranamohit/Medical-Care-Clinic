@@ -1,0 +1,25 @@
+{
+  "doc" : {
+    "a1" : {
+      "age" : 22,
+      "name" : "sgk",
+      "exp" : "sdm"
+    },
+    "a2" : {
+      "age" : 22,
+      "name" : "sgk2",
+      "exp" : "sml"
+    },
+    "a3" : {
+      "age" : 22,
+      "name" : "sgk2",
+      "exp" : "sml"
+    }
+    ,
+    "a4" : {
+      "age" : 22,
+      "name" : "sgk2",
+      "exp" : "sml"
+    }
+  }
+}
