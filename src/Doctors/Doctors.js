@@ -1,10 +1,20 @@
 import React, { Component } from "react";
 import Cards from "./Cards/Cards";
-
+import * as firebase from "firebase";
 class Doctors extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {data:[]};
+    firebase.database().ref("doctors/").once("value",(snap)=>{
+      var data = snap.val();
+      var arr=[];
+      for (var ele in data){
+        arr.push(data[ele]);
+      }
+      //console.log(arr);
+      this.setState({data:arr});
+      this.forceUpdate();
+    });
   }
   render() {
     return (
@@ -14,7 +24,19 @@ class Doctors extends Component {
         <br />
         <div class="container">
           <div class="row">
-            <div class="col-sm">
+            
+            {this.state.data.map(data=>{
+              
+              return<Cards
+              name={data.name}
+              experience={data.experience}
+              degree={data.degree}
+              imsrc={data.imsrc}
+              specialization={data.specialization}
+              availableTimings={data.availableTimings}
+              />;
+            })}
+
               <Cards
                 name="Dr.Narayan Murthy"
                 experience="Experience:20yrs"
@@ -23,8 +45,8 @@ class Doctors extends Component {
                 specialization="NEUROLOGIST"
                 availableTimings="10am to 12pm"
               />
-            </div>
-            <div class="col-sm">
+            
+            
               <Cards
                 name="Dr.Keshav Nanda"
                 experience="Experience:12yrs"
@@ -33,8 +55,8 @@ class Doctors extends Component {
                 specialization="Gynecologist"
                 availableTimings="10am to 12pm"
               />
-            </div>
-            <div class="col-sm" style={{ padding: "5px;" }}>
+            
+            
               <Cards
                 name="Johnny Adolf"
                 experience="Experience:7yrs"
@@ -43,7 +65,8 @@ class Doctors extends Component {
                 specialization="Dentist"
                 availableTimings="10am to 12pm"
               />
-            </div>
+            
+
           </div>
         </div>
       </div>

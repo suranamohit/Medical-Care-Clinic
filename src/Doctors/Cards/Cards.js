@@ -8,7 +8,9 @@ class Cards extends Component {
   }
   render() {
     return (
-      <div className="card box" style={{ width: "300px", height: "500px" }}>
+
+      <div class="col-sm">
+      <div className="card box" style={{ width: "250px", height: "500px" ,}}>
         <img class="card-img-top" src={this.props.imsrc} alt="Card image cap" />
 
         <div class="card-body">
@@ -18,6 +20,7 @@ class Cards extends Component {
           <p class="card-text">{this.props.degree}</p>
           <p class="card-text">{this.props.availableTimings}</p>
         </div>
+      </div>
       </div>
     );
   }
