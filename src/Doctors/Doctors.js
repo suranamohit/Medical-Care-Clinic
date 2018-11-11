@@ -5,6 +5,7 @@ class Doctors extends Component {
   constructor(props) {
     super(props);
     this.state = {data:[]};
+    //Card Generation
     firebase.database().ref("doctors/").once("value",(snap)=>{
       var data = snap.val();
       var arr=[];
