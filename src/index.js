@@ -6,12 +6,12 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 var config = {
-    apiKey: "AIzaSyBS6bOINh8seoHw3Pmde2VOZvQHr6SPcbQ",
-    authDomain: "sganimatedlogin.firebaseapp.com",
-    databaseURL: "https://sganimatedlogin.firebaseio.com",
-    projectId: "sganimatedlogin",
-    storageBucket: "sganimatedlogin.appspot.com",
-    messagingSenderId: "38208081261"
+  apiKey: "AIzaSyA58daX7StsenjPIvFxN0CnwqIjxu3AKek",
+  authDomain: "medical-care-clinic.firebaseapp.com",
+  databaseURL: "https://medical-care-clinic.firebaseio.com",
+  projectId: "medical-care-clinic",
+  storageBucket: "medical-care-clinic.appspot.com",
+  messagingSenderId: "884539528733"
   };
   firebase.initializeApp(config);
 ReactDOM.render(<App />, document.getElementById('root'));

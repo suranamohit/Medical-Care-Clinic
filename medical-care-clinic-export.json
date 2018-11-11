@@ -55,6 +55,14 @@
       "degree": "MBBS",
       "imsrc": "img/img7.jpg",
       "availableTimings": "5pm-10pm"
+    },
+    "a8": {
+      "name": "HARWINDER ",
+      "specialization": "GENERAL PHYSICIAN",
+      "experience": "6 yrs",
+      "degree": "MBBS",
+      "imsrc": "img/img1.jpg",
+      "availableTimings": "5pm-10pm"
     }
   }
 }
