@@ -11,7 +11,7 @@ class Doctors extends Component {
       for (var ele in data){
         arr.push(data[ele]);
       }
-      //console.log(arr);
+     
       this.setState({data:arr});
       this.forceUpdate();
     });
