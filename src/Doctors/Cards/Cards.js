@@ -10,7 +10,7 @@ class Cards extends Component {
     return (
 
       <div class="col-sm">
-      <div className="card box" style={{ width: "250px", height: "500px" ,}}>
+      <div className="card box" style={{ width: "250px", height: "auto" ,}}>
         <img class="card-img-top" src={this.props.imsrc} alt="Card image cap" />
 
         <div class="card-body">
