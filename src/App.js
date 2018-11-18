@@ -6,6 +6,7 @@ import About from "./About/About";
 import Nav from "./Nav/Nav";
 import Doctors from "./Doctors/Doctors";
 import Footer from "./Footer/Footer";
+import Appointment from "./Appointment/Appointment";
 class App extends Component {
   render() {
     return (
@@ -17,8 +18,8 @@ class App extends Component {
         <About />
         <br />
         <br />
-        <Doctors
-         />
+        <Doctors />
+        <Appointment />
         <br />
         <br />
         <br />

@@ -36,6 +36,11 @@ class Nav extends Component {
               </a>
             </li>
             <li class="nav-item">
+              <a class="nav-link nav-fonts" href="#appointment">
+                Appointment
+              </a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link nav-fonts " href="#footer">
                 More about us
               </a>
