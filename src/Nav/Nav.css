@@ -1,3 +1,8 @@
-.nav-fonts{
-    font-family: 'Lobster', cursive;
+.nav-fonts {
+  font-family: "Lobster", cursive;
+}
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
 }
