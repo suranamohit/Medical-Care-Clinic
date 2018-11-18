@@ -26,7 +26,7 @@ class Doctors extends Component {
         <br />
         <br />
         <br />
-        <h2>Doctors</h2>
+        <h3>Doctors</h3>
         <p>This is about the Doctors/Specialists</p>
         <br />
         <div class="container">
