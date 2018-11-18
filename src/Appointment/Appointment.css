@@ -5,6 +5,7 @@
   background-color: #f1f1f1;
   width: 30%;
   height: 300px;
+  border-radius: 10px;
 }
 
 /* Style the buttons inside the tab */
@@ -20,27 +21,32 @@
   cursor: pointer;
   transition: 0.3s;
   font-size: 17px;
+  border-radius: 10px;
 }
 
 /* Change background color of buttons on hover */
 #appointment .tab button:hover {
   background-color: #ddd;
+  border-radius: 10px;
 }
 
 /* Create aactive/current "tab button" class */
 #appointment .tab button.active {
   background-color: #ccc;
+  border-radius: 10px;
 }
 
 /* Style the tab content */
 #appointment .tabcontent {
   float: left;
   padding: 0px 12px;
-  border: 1px solid #ccc;
+  border: 1px solid #cccccc;
   width: 70%;
   border-left: none;
   height: 300px;
+  border-radius: 10px;
   display: none;
+  /* margin: 1px; */
 }
 
 #appointment .active {
