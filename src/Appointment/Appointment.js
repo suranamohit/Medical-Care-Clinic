@@ -65,8 +65,6 @@ class Appointment extends Component {
         <JwModal id="userDetailsModel">
           <h1>Appointment Defaults</h1>
 
-          <p>Name mobilenmber email</p>
-
           <label for="exampleInputEmail1">Name</label>
           <div class="row">
             <div class="col">
