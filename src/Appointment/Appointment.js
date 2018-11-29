@@ -6,7 +6,6 @@ class Appointment extends Component {
     super(props);
     this.state = {};
     this.selectorFn = this.selectorFn.bind(this);
-  warn=e=> {
   }
 
   warn = e => {
