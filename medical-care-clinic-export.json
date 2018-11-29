@@ -5,7 +5,7 @@
       "specialization": "NEUROLOGIST",
       "experience": "22 yrs",
       "degree": "MBBS/PHD",
-      "imsrc": "img/img1.jpg",
+      "imsrc": "img/img8.jpg",
       "availableTimings": "10am-3pm"
     },
     "a2": {
@@ -13,7 +13,7 @@
       "specialization": "GYNECOLOGIST",
       "experience": "12 yrs",
       "degree": "MBBS",
-      "imsrc": "img/img2.jpg",
+      "imsrc": "img/img9.jpg",
       "availableTimings": "9am-5pm"
     },
     "a3": {
@@ -21,7 +21,7 @@
       "specialization": "DENTIST",
       "experience": "22 yrs",
       "degree": "DDS",
-      "imsrc": "img/img3.jpg",
+      "imsrc": "img/img7.jpg",
       "availableTimings": "10am-4pm"
     },
     "a4": {
@@ -29,7 +29,7 @@
       "specialization": "NEUROLOGIST",
       "experience": "10 yrs",
       "degree": "MBBS",
-      "imsrc": "img/img4.jpg",
+      "imsrc": "img/img11.jpg",
       "availableTimings": "4pm-9pm"
     },
     "a5": {
@@ -37,7 +37,7 @@
       "specialization": "GENERAL PHYSICIAN",
       "experience": "18 yrs",
       "degree": "M.D.",
-      "imsrc": "img/img5.jpg",
+      "imsrc": "img/imgg.jpg",
       "availableTimings": "8am-3pm"
     },
     "a6": {
@@ -53,16 +53,9 @@
       "specialization": "GENERAL PHYSICIAN",
       "experience": "6 yrs",
       "degree": "MBBS",
-      "imsrc": "img/img7.jpg",
+      "imsrc": "img/img10.jpg",
       "availableTimings": "5pm-10pm"
-    },
-    "a8": {
-      "name": "HARWINDER ",
-      "specialization": "GENERAL PHYSICIAN",
-      "experience": "6 yrs",
-      "degree": "MBBS",
-      "imsrc": "img/img1.jpg",
-      "availableTimings": "5pm-10pm"
+    
     }
   }
 }

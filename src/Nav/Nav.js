@@ -23,6 +23,8 @@ class Nav extends Component {
         <a class="navbar-brand nav-fonts" href="#">
           <b>Medical Care Clinic</b>
         </a>
+        <div class="container-fluid">
+        <div class="navbar-header">
         <div class="collapse navbar-collapse" id="navbarToggler">
           <ul class="navbar-nav  mt-2 mt-lg-0">
             <li class="nav-item active">
@@ -47,6 +49,10 @@ class Nav extends Component {
             </li>
           </ul>
         </div>
+        </div>
+        </div>
+
+      
       </nav>
     );
   }

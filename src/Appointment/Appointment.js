@@ -5,12 +5,31 @@ class Appointment extends Component {
     super(props);
     this.state = {};
     this.selectorFn = this.selectorFn.bind(this);
+    
+}
+
+  warn=e=> {
+    var retVal =prompt ("Enter your name : ", "your name here");
+    if( retVal !=null ){
+       document.write (retVal + ":your appointment is fixed.thank you!");
+       return true;
+    }
+    else{
+       document.write ("User does not want to continue!");
+       return false;
+    }
+
+
+    
+    
+               
   }
 
   selectorFn = evt => {
     var i,
       tabcontent,
       tablinks,
+      
       eId = evt.target.id;
 
     tabcontent = document.getElementsByClassName("tabcontent");
@@ -41,7 +60,7 @@ class Appointment extends Component {
 
         <div class="tab">
           <button id="SectionBtn1" class="tablinks" onClick={this.selectorFn}>
-            London
+            Dr.Narayan Murthy
           </button>
           <button id="SectionBtn2" class="tablinks" onClick={this.selectorFn}>
             Paris
@@ -52,8 +71,17 @@ class Appointment extends Component {
         </div>
 
         <div id="SectionContect1" class="tabcontent">
-          <h3>London</h3>
-          <p>London is the capital city of England.</p>
+          <h3>Dr.Narayana Murthy</h3>
+          <p>He is a profound neurologist.has a lot of work expeience.
+          
+          </p>
+          <p>done more than 30 operations.</p>
+          <p>is available in the clinic from 10-6pm.to place an appointment please click the button.</p>
+          
+          <button id="SectionBtn5" bsStyle="primary" class="aa" onClick={this.warn}>
+            place appointment
+          </button>
+        
         </div>
 
         <div id="SectionContect2" class="tabcontent">

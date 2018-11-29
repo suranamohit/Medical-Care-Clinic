@@ -5,6 +5,7 @@
   "homepage": "https://0xpulsar.github.io/medical",
   "auther": "surya_gangaraj_k",
   "dependencies": {
+    "confirm-simple": "^1.0.3",
     "firebase": "^5.5.7",
     "gh-pages": "^2.0.1",
     "react": "^16.5.2",

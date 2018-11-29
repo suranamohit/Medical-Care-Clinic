@@ -52,3 +52,11 @@
 #appointment .active {
   display: block;
 }
+#appointment .aa {
+  float: center;
+  width: 40%;
+  padding: 0px 12px;
+  margin-left: 30%;
+}
+
+
