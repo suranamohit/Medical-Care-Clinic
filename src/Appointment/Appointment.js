@@ -63,7 +63,7 @@ class Appointment extends Component {
           </button>
         </JwModal>
         <JwModal id="userDetailsModel">
-          <h1>Appointment Defaults</h1>
+          <h1>Appointment defaults</h1>
 
           <label for="exampleInputEmail1">Name</label>
           <div class="row">
