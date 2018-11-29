@@ -46,6 +46,7 @@
   height: 300px;
   border-radius: 10px;
   display: none;
+  overflow: scroll;
   /* margin: 1px; */
 }
 
@@ -59,4 +60,6 @@
   margin-left: 30%;
 }
 
-
+.jw-modal-body {
+  border-radius: 10px;
+}

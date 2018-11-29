@@ -1,35 +1,30 @@
 import React, { Component } from "react";
 import "./Appointment.css";
+import JwModal from "jw-react-modal";
 class Appointment extends Component {
   constructor(props) {
     super(props);
     this.state = {};
     this.selectorFn = this.selectorFn.bind(this);
-    
-}
-
   warn=e=> {
-    var retVal =prompt ("Enter your name : ", "your name here");
-    if( retVal !=null ){
-       document.write (retVal + ":your appointment is fixed.thank you!");
-       return true;
-    }
-    else{
-       document.write ("User does not want to continue!");
-       return false;
-    }
-
-
-    
-    
-               
   }
+
+  warn = e => {
+    // return <Model />;
+    // var retVal = prompt("Enter your name : ", "your name here");
+    // if (retVal != null) {
+    //   document.write(retVal + ":your appointment is fixed.thank you!");
+    //   return true;
+    // } else {
+    //   document.write("User does not want to continue!");
+    //   return false;
+    // }
+  };
 
   selectorFn = evt => {
     var i,
       tabcontent,
       tablinks,
-      
       eId = evt.target.id;
 
     tabcontent = document.getElementsByClassName("tabcontent");
@@ -54,44 +49,299 @@ class Appointment extends Component {
         <br />
         <br />
         <br />
+        <JwModal id="userDetailsComfirmModel">
+          <h1>Schedule Details</h1>
+          <p>
+            Hi, your appointment is successfully scheduled on 10:00Am day after
+            tomorrow. If you are unable to make it please call us at
+            +91-90090900 to reschedule.
+          </p>
+          <button
+            class="btn btn-primary float-right"
+            onClick={JwModal.close("userDetailsComfirmModel")}
+          >
+            X
+          </button>
+        </JwModal>
+        <JwModal id="userDetailsModel">
+          <h1>Appointment Defaults</h1>
+
+          <p>Name mobilenmber email</p>
+
+          <label for="exampleInputEmail1">Name</label>
+          <div class="row">
+            <div class="col">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="First name"
+              />
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Last name" />
+            </div>
+          </div>
+          <br />
+          <label for="exampleInputEmail1">Email address</label>
+          <input
+            type="email"
+            class="form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+            placeholder="Enter email"
+          />
+          <br />
+          <label for="exampleInputEmail1">Mobile number</label>
+          <input
+            type="number"
+            class="form-control"
+            placeholder="Mobile number"
+          />
+          <br />
+          <div class="row">
+            <div class="col">
+              <button
+                class="btn btn-primary "
+                onClick={JwModal.close("userDetailsModel")}
+              >
+                Close
+              </button>
+            </div>
+            <div class="col">
+              <button
+                type="button"
+                class="btn  btn-primary float-right"
+                onClick={JwModal.open("userDetailsComfirmModel")}
+              >
+                Submit
+              </button>
+            </div>
+          </div>
+        </JwModal>
+
         <h3>Appointment</h3>
         <p>Add all the Contents here.</p>
         {/* starts here */}
 
         <div class="tab">
           <button id="SectionBtn1" class="tablinks" onClick={this.selectorFn}>
-            Dr.Narayan Murthy
+            Cardiologists
           </button>
           <button id="SectionBtn2" class="tablinks" onClick={this.selectorFn}>
-            Paris
+            Anesthesiologists
           </button>
           <button id="SectionBtn3" class="tablinks" onClick={this.selectorFn}>
-            Tokyo
+            Allergists/Immunologists
           </button>
         </div>
 
         <div id="SectionContect1" class="tabcontent">
-          <h3>Dr.Narayana Murthy</h3>
-          <p>He is a profound neurologist.has a lot of work expeience.
-          
+          <p>
+            <ul class="list-group">
+              <li class="list-group-item">
+                Cras justo odio{" "}
+                <button
+                  type="button"
+                  class="btn btn-primary float-right"
+                  onClick={JwModal.open("userDetailsModel")}
+                >
+                  place appointment
+                </button>
+              </li>
+              <li class="list-group-item">
+                Dapibus ac facilisis in{" "}
+                <button
+                  type="button"
+                  class="btn btn-primary float-right"
+                  onClick={JwModal.open("userDetailsModel")}
+                >
+                  place appointment
+                </button>
+              </li>
+              <li class="list-group-item">
+                Morbi leo risus{" "}
+                <button
+                  type="button"
+                  class="btn btn-primary float-right"
+                  onClick={JwModal.open("userDetailsModel")}
+                >
+                  place appointment
+                </button>
+              </li>
+            </ul>
           </p>
-          <p>done more than 30 operations.</p>
-          <p>is available in the clinic from 10-6pm.to place an appointment please click the button.</p>
-          
-          <button id="SectionBtn5" bsStyle="primary" class="aa" onClick={this.warn}>
-            place appointment
-          </button>
-        
         </div>
 
         <div id="SectionContect2" class="tabcontent">
-          <h3>Paris</h3>
-          <p>Paris is the capital of France.</p>
+          <ul class="list-group">
+            <li class="list-group-item">
+              Cras justo odio{" "}
+              <button
+                type="button"
+                class="btn btn-primary float-right"
+                onClick={JwModal.open("userDetailsModel")}
+              >
+                place appointment
+              </button>
+            </li>
+            <li class="list-group-item">
+              Dapibus ac facilisis in{" "}
+              <button
+                type="button"
+                class="btn btn-primary float-right"
+                onClick={JwModal.open("userDetailsModel")}
+              >
+                place appointment
+              </button>
+            </li>
+            <li class="list-group-item">
+              Morbi leo risus{" "}
+              <button
+                type="button"
+                class="btn btn-primary float-right"
+                onClick={JwModal.open("userDetailsModel")}
+              >
+                place appointment
+              </button>
+            </li>
+            <li class="list-group-item">
+              Porta ac consectetur ac{" "}
+              <button
+                type="button"
+                class="btn btn-primary float-right"
+                onClick={JwModal.open("userDetailsModel")}
+              >
+                place appointment
+              </button>
+            </li>
+            <li class="list-group-item">
+              Dapibus ac facilisis in{" "}
+              <button
+                type="button"
+                class="btn btn-primary float-right"
+                onClick={JwModal.open("userDetailsModel")}
+              >
+                place appointment
+              </button>
+            </li>
+            <li class="list-group-item">
+              Morbi leo risus{" "}
+              <button
+                type="button"
+                class="btn btn-primary float-right"
+                onClick={JwModal.open("userDetailsModel")}
+              >
+                place appointment
+              </button>
+            </li>
+            <li class="list-group-item">
+              Porta ac consectetur ac{" "}
+              <button
+                type="button"
+                class="btn btn-primary float-right"
+                onClick={JwModal.open("userDetailsModel")}
+              >
+                place appointment
+              </button>
+            </li>
+            <li class="list-group-item">
+              Vestibulum at eros{" "}
+              <button
+                type="button"
+                class="btn btn-primary float-right"
+                onClick={JwModal.open("userDetailsModel")}
+              >
+                place appointment
+              </button>
+            </li>
+          </ul>
         </div>
 
         <div id="SectionContect3" class="tabcontent">
-          <h3>Tokyo</h3>
-          <p>Tokyo is the capital of Japan.</p>
+          <p>
+            <ul class="list-group">
+              <li class="list-group-item">
+                Cras justo odio{" "}
+                <button
+                  type="button"
+                  class="btn btn-primary float-right"
+                  onClick={JwModal.open("userDetailsModel")}
+                >
+                  place appointment
+                </button>
+              </li>
+              <li class="list-group-item">
+                Dapibus ac facilisis in{" "}
+                <button
+                  type="button"
+                  class="btn btn-primary float-right"
+                  onClick={JwModal.open("userDetailsModel")}
+                >
+                  place appointment
+                </button>
+              </li>
+              <li class="list-group-item">
+                Morbi leo risus{" "}
+                <button
+                  type="button"
+                  class="btn btn-primary float-right"
+                  onClick={JwModal.open("userDetailsModel")}
+                >
+                  place appointment
+                </button>
+              </li>
+              <li class="list-group-item">
+                Porta ac consectetur ac{" "}
+                <button
+                  type="button"
+                  class="btn btn-primary float-right"
+                  onClick={JwModal.open("userDetailsModel")}
+                >
+                  place appointment
+                </button>
+              </li>
+              <li class="list-group-item">
+                Dapibus ac facilisis in{" "}
+                <button
+                  type="button"
+                  class="btn btn-primary float-right"
+                  onClick={JwModal.open("userDetailsModel")}
+                >
+                  place appointment
+                </button>
+              </li>
+              <li class="list-group-item">
+                Morbi leo risus{" "}
+                <button
+                  type="button"
+                  class="btn btn-primary float-right"
+                  onClick={JwModal.open("userDetailsModel")}
+                >
+                  place appointment
+                </button>
+              </li>
+              <li class="list-group-item">
+                Porta ac consectetur ac{" "}
+                <button
+                  type="button"
+                  class="btn btn-primary float-right"
+                  onClick={JwModal.open("userDetailsModel")}
+                >
+                  place appointment
+                </button>
+              </li>
+              <li class="list-group-item">
+                Vestibulum at eros{" "}
+                <button
+                  type="button"
+                  class="btn btn-primary float-right"
+                  onClick={JwModal.open("userDetailsModel")}
+                >
+                  place appointment
+                </button>
+              </li>
+            </ul>
+          </p>
         </div>
         {/* ends here */}
       </div>
